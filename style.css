@@ -1,0 +1,2788 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Hidden by default */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+section {
+    display: block;
+}
+
+.top-container {
+    background-image: url('./images/Untitled\ design.png');
+    height: 690px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+#canada {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+#lebanon {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f3020;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: #c8d1da;
+    font-weight: bold;
+}
+
+#family-name {
+    color: #6fa4ff;
+    font-weight: bold;
+}
+
+.logo p {
+    font-size: 1.1rem;
+}
+
+.logo {
+    display: flex;
+
+}
+
+.nav-links a:hover {
+    background-color: #4185fa;
+    ;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+
+
+
+/* Header Animation */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Shifted to the left more */
+    transform: translate(-10%, -70%);
+    /* Adjusted for better centering */
+    height: 180px;
+    font-family: 'Lato', sans-serif;
+    font-size: 42px;
+    /* Increased font size */
+    line-height: 50px;
+    color: #ffffff;
+    /*background-color: #1f3020;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    border-radius: 20px;
+    width: 775px;*/
+
+}
+
+/* Inner container */
+.content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 50px;
+    padding: 0 50px;
+    /* Adjust padding if needed */
+    position: relative;
+}
+
+/* Pseudo-elements for square brackets */
+.content__container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.content__container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+/* Text */
+.content__container__text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+/* Animated list */
+.content__container__list {
+    margin-top: 0px;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+
+    /* Animation to change list items */
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+    line-height: 50px;
+    margin: 0;
+}
+
+.content_container_Upper_text {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+/* Keyframes for animation */
+@keyframes change {
+
+    0%,
+    12.66%,
+    100% {
+        transform: translateY(0);
+    }
+
+    16.66%,
+    29.32% {
+        transform: translateY(-25%);
+    }
+
+    33.32%,
+    45.98% {
+        transform: translateY(-50%);
+    }
+
+    49.98%,
+    62.64% {
+        transform: translateY(-75%);
+    }
+
+    66.64%,
+    79.3% {
+        transform: translateY(-50%);
+    }
+
+    83.3%,
+    95.96% {
+        transform: translateY(-25%);
+    }
+}
+
+.Email_Location {
+    display: flex;
+    align-items: center;
+    bottom: 25px;
+    left: 0;
+    position: absolute;
+    margin-left: 150px;
+}
+
+h2 {
+    color: #ffffff
+}
+
+.Email {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+
+}
+
+.Location {
+    padding-right: 100px;
+    margin-left: 50px;
+
+}
+
+#Email_text {
+    font-size: 15px;
+}
+
+.Email h2 {
+    font-size: 20px;
+}
+
+#Location_text {
+    font-size: 15px;
+}
+
+.Location h2 {
+    font-size: 20px;
+}
+
+#Get_in_touch {
+    background-color: #004bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 270px;
+}
+
+#Get_in_touch:hover {
+    background-color: #4185fa;
+    transform: scale(1.05);
+}
+
+#Get_in_touch:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+}
+
+
+
+/* body */
+.second-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*background-color: #1f3020;*/
+    background-image: url('./images/Beirut-Toronto.png');
+
+}
+
+#about-txt {
+    font-size: 2.2rem;
+    position: relative;
+    top: -30px;
+    /* Adjust this to move it higher */
+}
+
+#about-img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+
+}
+
+#about-content {
+    background-color: #004bb5;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+    border-radius: 20px;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#about-content:hover {
+    background-color: #4185fa;
+    transform: scale(1.05);
+}
+
+#about-content:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+}
+
+#about-content p {
+    color: white;
+    font-size: 20px;
+}
+
+.third-container {
+    background-color: #1f3020;
+    display: flex;
+    background-image: url('./images/football-field.webp');
+
+
+}
+
+.project1 {
+    background: linear-gradient(300deg, #EDBB00, #A50044, #004D98);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    border-bottom: 5px solid white;
+
+
+}
+
+
+
+
+
+#project1-dscrptn {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f3020;
+    height: 500px;
+    width: 50%;
+    margin-left: 50%;
+    border-left: 5px solid white;
+
+}
+
+#project1-dscrptn h3 {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#B {
+    color: #db0030;
+    background-color: #1f3020;
+}
+
+.A {
+    color: #ffed02;
+    background-color: #1f3020;
+}
+
+#R {
+    color: #168bff;
+    background-color: #1f3020;
+}
+
+#C {
+    color: #db0030;
+    background-color: #1f3020;
+
+}
+
+
+#project1-dscrptn p {
+
+    background-color: #004bb5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 25px;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 75%;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#project1-dscrptn p:hover {
+    background-color: #4185fa;
+    transform: scale(1.05);
+}
+
+#portfolio {
+    position: relative;
+    left: 88%;
+    top: -90%;
+    font-size: 2.2rem;
+    color: white;
+    background-color: #1f3020;
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+#barca-app {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    margin-left: -80px;
+    top: 80px;
+}
+
+.fourth-container {
+    background-color: #1f3020;
+    display: flex;
+    background-image: url('./images/yarn-table.jpg');
+
+
+}
+
+.project2 {
+    background: linear-gradient(300deg, #970053, #fe7de2, #fee046);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    border-bottom: 5px solid white;
+
+
+}
+
+#project2-dscrptn {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f3020;
+    height: 500px;
+    width: 50%;
+    margin-left: 50%;
+    border-left: 5px solid white;
+
+}
+
+#project2-dscrptn h3 {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+
+#inder {
+    color: #ffe416;
+
+}
+
+#CAT {
+    color: #fe7de2;
+
+
+}
+
+#project2-dscrptn p {
+
+    background-color: #004bb5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 25px;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 75%;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#project2-dscrptn p:hover {
+    background-color: #4185fa;
+    transform: scale(1.05);
+}
+
+#CaTinder-app {
+    width: 560px;
+    height: 360px;
+    position: relative;
+    margin-left: 80px;
+    top: 100px;
+}
+
+.fifth-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*background-color: #1f3020;*/
+    background-image: url('./images/Beirut-Toronto.png');
+    height: 750px;
+    width: 100%;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 100px;
+
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+
+
+.contact-left-title h2 {
+
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+
+}
+
+.contact-left-title hr {
+
+
+    width: 120px;
+    height: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+
+
+
+}
+
+.contact-inputs {
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: #d2ebff;
+
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contact-inputs :focus {
+    border: 2px solid #c6943e;
+}
+
+.contact-left button {
+    background-color: #004bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.contact-left button:hover {
+    background-color: #4185fa;
+    transform: scale(1.05);
+}
+
+.contact-left button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+}
+
+.contact-right img {
+    width: 450px;
+    margin-left: 200px;
+}
+
+#email-img {
+    height: 50px;
+    width: 60px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:374px) {
+
+
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 960px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+        /* Hidden by default */
+        z-index: 1000;
+        /* Ensure it's above other elements */
+    }
+
+    #backToTop:hover {
+        background-color: #0056b3;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #1f3020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 2;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .content {
+
+        left: 10%;
+        /* Shifted to the left more */
+        transform: translate(-10%, -70%);
+        /* Adjusted for better centering */
+        height: 120px;
+        font-size: 17px;
+        /* Increased font size */
+        line-height: 50px;
+        color: #ffffff;
+        margin-top: -50px;
+        z-index: 1;
+
+
+    }
+
+    .content__container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 50px;
+        padding: 0 50px;
+        /* Adjust padding if needed */
+        position: relative;
+    }
+
+
+
+    /* Text */
+    .content__container__text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    /* Animated list */
+    .content__container__list {
+        margin-top: 0px;
+        padding-left: 60px;
+        text-align: left;
+        list-style: none;
+
+        /* Animation to change list items */
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    .content__container__list__item {
+        line-height: 50px;
+        margin: 0;
+    }
+
+
+
+    .content_container_Upper_text {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+    }
+
+    .top-container {
+        background-image: url('./images/Untitled\ design.png');
+        max-height: 560px;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+    .Email_Location {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        bottom: 0px;
+        left: 0;
+        position: absolute;
+        margin-left: 7%;
+        flex-direction: column;
+
+
+
+
+    }
+
+    .Email h2 {
+        font-size: 1rem;
+    }
+
+    .Location h2 {
+        font-size: 1rem;
+    }
+
+    .Email {
+        border-bottom: 2px solid white;
+        border-right: none;
+        padding-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    .Location {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    #Get_in_touch {
+        padding: 7px 12px;
+        font-size: 15px;
+        margin-left: 18%;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+
+    }
+
+    #about-txt {
+        font-size: 2rem;
+        position: relative;
+        top: -30px;
+        margin-left: 100px;
+        /* Adjust this to move it higher */
+    }
+
+    #about-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+    #about-content {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        width: 275px;
+        margin-bottom: 30px;
+
+
+    }
+
+    #about-content p {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    .project1 {
+
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+
+
+
+
+    #project1-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+
+
+    }
+
+    #project1-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+
+
+
+    #project1-dscrptn p {
+
+
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 275px;
+        margin-bottom: 30px;
+    }
+
+
+    #portfolio {
+        position: relative;
+        left: 25%;
+        top: 0%;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+    #barca-app {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        margin-left: -15px;
+        top: 80px;
+    }
+
+
+    .project2 {
+
+        width: 100%;
+        height: 400px;
+
+
+
+
+    }
+
+    #project2-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+    }
+
+    #project2-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+
+
+
+
+    #project2-dscrptn p {
+
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 275px;
+        margin-bottom: 30px;
+
+
+    }
+
+
+
+    #CaTinder-app {
+        width: 300px;
+        height: 180px;
+        position: relative;
+        margin-left: 20px;
+        top: 100px;
+    }
+
+
+
+
+
+    .contact-inputs {
+        width: 80vw;
+        margin-left: -60px;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+
+    .contact-left-title h2 {
+
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-left: -50px;
+
+
+    }
+
+    .contact-left-title hr {
+
+
+        width: 120px;
+        height: 5px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: -50px;
+
+
+
+
+    }
+
+    .contact-left button {
+        margin-left: -50px;
+
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 960px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+        /* Hidden by default */
+        z-index: 1000;
+        /* Ensure it's above other elements */
+    }
+
+    #backToTop:hover {
+        background-color: #0056b3;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #1f3020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .content {
+
+        left: 10%;
+        /* Shifted to the left more */
+        transform: translate(-10%, -70%);
+        /* Adjusted for better centering */
+        height: 120px;
+        font-size: 23px;
+        /* Increased font size */
+        line-height: 50px;
+        color: #ffffff;
+        margin-top: -50px;
+        z-index: 1;
+
+
+    }
+
+    .content__container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 50px;
+        padding: 0 50px;
+        /* Adjust padding if needed */
+        position: relative;
+    }
+
+
+
+    /* Text */
+    .content__container__text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    /* Animated list */
+    .content__container__list {
+        margin-top: 0px;
+        padding-left: 60px;
+        text-align: left;
+        list-style: none;
+
+        /* Animation to change list items */
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    .content__container__list__item {
+        line-height: 50px;
+        margin: 0;
+    }
+
+
+    .content_container_Upper_text {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+    }
+
+
+    .top-container {
+        background-image: url('./images/Untitled\ design.png');
+        max-height: 560px;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+    .Email_Location {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        bottom: 60px;
+        left: 0;
+        position: absolute;
+        margin-left: 7%;
+        flex-direction: column;
+
+
+
+
+    }
+
+    .Email h2 {
+        font-size: 1rem;
+    }
+
+    .Location h2 {
+        font-size: 1rem;
+    }
+
+    .Email {
+        border-bottom: 2px solid white;
+        border-right: none;
+        padding-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    .Location {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    #Get_in_touch {
+        padding: 7px 15px;
+        font-size: 15px;
+        margin-left: 14%;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+
+    }
+
+    #about-txt {
+        font-size: 2rem;
+        position: relative;
+        top: -30px;
+        margin-left: 150px;
+        /* Adjust this to move it higher */
+    }
+
+    #about-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+    #about-content {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        width: 350px;
+        margin-bottom: 30px;
+
+
+
+    }
+
+    #about-content p {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    .project1 {
+
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+
+
+
+
+    #project1-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+
+
+    }
+
+    #project1-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+
+
+
+    #project1-dscrptn p {
+
+
+        margin-top: 40px;
+        margin-left: 10px;
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 350px;
+        margin-bottom: 30px;
+
+
+    }
+
+
+    #portfolio {
+        position: relative;
+        left: 28%;
+        top: 0%;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+    #barca-app {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        margin-left: 4%;
+        top: 80px;
+    }
+
+
+    .project2 {
+
+        width: 100%;
+        height: 400px;
+
+
+
+
+    }
+
+    #project2-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+    }
+
+    #project2-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+
+
+
+
+    #project2-dscrptn p {
+
+        margin-top: 40px;
+        margin-left: 10px;
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 350px;
+        margin-bottom: 30px;
+
+
+    }
+
+
+
+    #CaTinder-app {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin-left: 40px;
+        top: 100px;
+    }
+
+
+
+
+
+    .contact-inputs {
+        width: 80vw;
+        margin-left: -60px;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+
+    .contact-left-title h2 {
+
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-left: -50px;
+
+
+    }
+
+    .contact-left-title hr {
+
+
+        width: 120px;
+        height: 5px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: -50px;
+
+
+
+
+    }
+
+    .contact-left button {
+        margin-left: -50px;
+
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #1f3020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .content {
+
+        left: 10%;
+        /* Shifted to the left more */
+        transform: translate(-10%, -70%);
+        /* Adjusted for better centering */
+        height: 130px;
+        font-size: 22px;
+        /* Increased font size */
+        line-height: 50px;
+        color: #ffffff;
+
+
+    }
+
+    .content_container_Upper_text {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+
+    }
+
+    .top-container {
+        background-image: url('./images/Untitled\ design.png');
+        max-height: 560px;
+        width: 100%;
+        background-size: cover;
+
+
+    }
+
+    .Email_Location {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        bottom: 60px;
+        left: 0;
+        position: absolute;
+        margin-left: 7%;
+        flex-direction: column;
+
+
+
+
+
+
+
+
+    }
+
+    .Email h2 {
+        font-size: 1rem;
+    }
+
+    .Location h2 {
+        font-size: 1rem;
+    }
+
+    .Email {
+        border-bottom: 2px solid white;
+        border-right: none;
+        padding-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    .Location {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    #Get_in_touch {
+        padding: 7px 15px;
+        font-size: 15px;
+        margin-left: 14%;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+
+    }
+
+    #about-txt {
+        font-size: 2rem;
+        position: relative;
+        top: -30px;
+        margin-left: 150px;
+        /* Adjust this to move it higher */
+    }
+
+    #about-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+    #about-content {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        width: 375px;
+        margin-bottom: 30px;
+
+
+    }
+
+
+    #about-content p {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    .project1 {
+
+        width: 100%;
+        height: 400px;
+
+
+
+    }
+
+
+
+
+
+    #project1-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+
+
+    }
+
+    #project1-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+
+
+
+
+
+    #project1-dscrptn p {
+
+
+        margin-top: 40px;
+        margin-left: calc(50vw - 35%);
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 70%;
+        margin-bottom: 30px;
+
+
+    }
+
+    .project1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        left: calc(50vw - 250px);
+        border-left: 5px solid white;
+
+    }
+
+    #portfolio {
+        position: relative;
+        left: calc(50vw/1.8);
+        top: 0%;
+        font-size: 2rem;
+        color: white;
+
+
+    }
+
+    #barca-app {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        margin-left: calc(50vw/4);
+        top: 140px;
+    }
+
+
+    .project2 {
+
+        width: 100%;
+        height: 400px;
+        left: calc(50vw - 250px);
+        border-left: 5px solid white;
+
+
+
+    }
+
+    #project2-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+    }
+
+    #project2-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+
+
+
+
+    #project2-dscrptn p {
+
+
+        margin-top: 40px;
+        margin-left: calc(50vw - 35%);
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 70%;
+        margin-bottom: 30px;
+
+    }
+
+
+
+    #CaTinder-app {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin-left: calc(50vw/2);
+        top: 100px;
+    }
+
+
+
+
+
+    .contact-inputs {
+        width: 80vw;
+        margin-left: -60px;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+
+    .contact-left-title h2 {
+
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-left: -50px;
+
+
+    }
+
+    .contact-left-title hr {
+
+
+        width: 120px;
+        height: 5px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: -50px;
+
+
+
+
+    }
+
+    .contact-left button {
+        margin-left: -50px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #1f3020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .content {
+
+        left: 10%;
+        /* Shifted to the left more */
+        transform: translate(-10%, -70%);
+        /* Adjusted for better centering */
+        height: 130px;
+        font-size: 30px;
+        /* Increased font size */
+        line-height: 50px;
+        color: #ffffff;
+
+
+    }
+
+    .top-container {
+        background-image: url('./images/Untitled\ design.png');
+        max-height: 560px;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+    .Email_Location {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        bottom: 60px;
+        left: 0;
+        position: absolute;
+        margin-left: 7%;
+        flex-direction: column;
+
+
+
+
+    }
+
+    .Email h2 {
+        font-size: 1rem;
+    }
+
+    .Location h2 {
+        font-size: 1rem;
+    }
+
+    .Email {
+        border-bottom: 2px solid white;
+        border-right: none;
+        padding-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    .Location {
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    #Get_in_touch {
+        padding: 7px 15px;
+        font-size: 15px;
+        margin-left: 50px;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+
+    }
+
+    #about-txt {
+        font-size: 2rem;
+        position: relative;
+        top: -30px;
+        margin-left: 150px;
+        /* Adjust this to move it higher */
+    }
+
+    #about-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+    #about-content {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        width: 375px;
+        margin-bottom: 30px;
+
+
+
+
+    }
+
+
+    #about-content p {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    .project1 {
+
+        width: 100%;
+        height: 400px;
+
+
+
+    }
+
+
+
+
+
+    #project1-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+
+
+    }
+
+    #project1-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+
+
+
+
+
+    #project1-dscrptn p {
+
+
+
+        margin-top: 40px;
+        margin-left: calc(50vw - 35%);
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 70%;
+        margin-bottom: 30px;
+
+    }
+
+    .project1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        left: calc(50vw - 250px);
+        border-left: 5px solid white;
+
+    }
+
+    #portfolio {
+        position: relative;
+        left: calc(50vw/1.8);
+        top: 0%;
+        font-size: 2rem;
+        color: white;
+
+
+    }
+
+    #barca-app {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        margin-left: calc(50vw/4);
+        top: 140px;
+    }
+
+
+    .project2 {
+
+        width: 100%;
+        height: 400px;
+        left: calc(50vw - 250px);
+        border-left: 5px solid white;
+
+
+
+    }
+
+    #project2-dscrptn {
+
+        height: 500px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 500px;
+        border-top: 5px solid white;
+    }
+
+    #project2-dscrptn h3 {
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+
+
+
+
+    #project2-dscrptn p {
+
+
+        margin-top: 40px;
+        margin-left: calc(50vw - 35%);
+
+        font-size: 1rem;
+
+        padding: 20px;
+        width: 70%;
+        margin-bottom: 30px;
+
+
+    }
+
+
+
+    #CaTinder-app {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin-left: calc(50vw/2);
+        top: 100px;
+    }
+
+
+
+
+
+    .contact-inputs {
+        width: 80vw;
+        margin-left: -60px;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+
+    .contact-left-title h2 {
+
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-left: -50px;
+
+
+    }
+
+    .contact-left-title hr {
+
+
+        width: 120px;
+        height: 5px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+        margin-left: -50px;
+
+
+
+
+    }
+
+    .contact-left button {
+        margin-left: -50px;
+
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    section {
+        display: block;
+    }
+
+    .top-container {
+        background-image: url('./images/Untitled\ design.png');
+        height: 690px;
+        width: 100%;
+        background-size: cover;
+
+    }
+
+    #canada {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    #lebanon {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        /* Prevents horizontal scrolling */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #1f3020;
+        color: white;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .logo a {
+        text-decoration: none;
+        color: #c8d1da;
+        font-weight: bold;
+    }
+
+    #family-name {
+        color: #6fa4ff;
+        font-weight: bold;
+    }
+
+    .logo p {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        display: flex;
+
+    }
+
+    .nav-links a:hover {
+        background-color: #4185fa;
+        ;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin-bottom: 4px;
+    }
+
+
+
+
+    /* Header Animation */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* Shifted to the left more */
+        transform: translate(-10%, -70%);
+        /* Adjusted for better centering */
+        height: 180px;
+        font-family: 'Lato', sans-serif;
+        font-size: 230%;
+        /* Increased font size */
+        line-height: 50px;
+        color: #ffffff;
+        /*background-color: #1f3020;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        border-radius: 20px;
+        width: 775px;*/
+
+    }
+
+    /* Inner container */
+    .content__container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 50px;
+        padding: 0 50px;
+        /* Adjust padding if needed */
+        position: relative;
+    }
+
+    /* Pseudo-elements for square brackets */
+    .content__container::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+    }
+
+    .content__container::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+    }
+
+    /* Text */
+    .content__container__text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    /* Animated list */
+    .content__container__list {
+        margin-top: 0px;
+        padding-left: 110px;
+        text-align: left;
+        list-style: none;
+
+        /* Animation to change list items */
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    .content__container__list__item {
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .content_container_Upper_text {
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+
+    /* Keyframes for animation */
+    @keyframes change {
+
+        0%,
+        12.66%,
+        100% {
+            transform: translateY(0);
+        }
+
+        16.66%,
+        29.32% {
+            transform: translateY(-25%);
+        }
+
+        33.32%,
+        45.98% {
+            transform: translateY(-50%);
+        }
+
+        49.98%,
+        62.64% {
+            transform: translateY(-75%);
+        }
+
+        66.64%,
+        79.3% {
+            transform: translateY(-50%);
+        }
+
+        83.3%,
+        95.96% {
+            transform: translateY(-25%);
+        }
+    }
+
+    .Email_Location {
+        display: flex;
+        align-items: center;
+        bottom: 25px;
+        left: 0;
+        position: absolute;
+        margin-left: 150px;
+    }
+
+    h2 {
+        color: #ffffff
+    }
+
+    .Email {
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid white;
+
+    }
+
+    .Location {
+        padding-right: 100px;
+        margin-left: 50px;
+
+    }
+
+    #Email_text {
+        font-size: 15px;
+    }
+
+    .Email h2 {
+        font-size: 20px;
+    }
+
+    #Location_text {
+        font-size: 15px;
+    }
+
+    .Location h2 {
+        font-size: 20px;
+    }
+
+    #Get_in_touch {
+        background-color: #004bb5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        margin-left: 270px;
+    }
+
+    #Get_in_touch:hover {
+        background-color: #4185fa;
+        transform: scale(1.05);
+    }
+
+    #Get_in_touch:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+    }
+
+
+
+    /* body */
+    .second-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+
+    }
+
+    #about-txt {
+        font-size: 2.2rem;
+        position: relative;
+        top: -30px;
+        /* Adjust this to move it higher */
+    }
+
+    #about-img {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+    #about-content {
+        background-color: #004bb5;
+        display: flex;
+        align-items: flex-start;
+        padding: 25px;
+        border-radius: 20px;
+        width: 80%;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #about-content:hover {
+        background-color: #4185fa;
+        transform: scale(1.05);
+    }
+
+    #about-content:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+    }
+
+    #about-content p {
+        color: white;
+        font-size: 20px;
+    }
+
+    .third-container {
+        background-color: #1f3020;
+        display: flex;
+        background-image: url('./images/football-field.webp');
+
+
+    }
+
+    .project1 {
+        background: linear-gradient(300deg, #EDBB00, #A50044, #004D98);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+        width: 50%;
+        height: 400px;
+        position: absolute;
+        border-bottom: 5px solid white;
+
+
+    }
+
+
+
+
+
+    #project1-dscrptn {
+        display: flex;
+        flex-direction: column;
+        background-color: #1f3020;
+        height: 500px;
+        width: 50%;
+        margin-left: 50%;
+        border-left: 5px solid white;
+
+    }
+
+    #project1-dscrptn h3 {
+        color: white;
+        font-size: 2.2rem;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+    #B {
+        color: #db0030;
+        background-color: #1f3020;
+    }
+
+    .A {
+        color: #ffed02;
+        background-color: #1f3020;
+    }
+
+    #R {
+        color: #168bff;
+        background-color: #1f3020;
+    }
+
+    #C {
+        color: #db0030;
+        background-color: #1f3020;
+
+    }
+
+
+    #project1-dscrptn p {
+
+        background-color: #004bb5;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 25px;
+        margin-top: 40px;
+        margin-left: 100px;
+        border-radius: 20px;
+        width: 70%;
+        cursor: pointer;
+        font-size: 100%;
+        color: white;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #project1-dscrptn p:hover {
+        background-color: #4185fa;
+        transform: scale(1.05);
+    }
+
+    #portfolio {
+        position: relative;
+        left: 86%;
+        top: -90%;
+        font-size: 2.2rem;
+        color: white;
+        background-color: #1f3020;
+        display: inline-block;
+        padding: 10px;
+        border: 5px solid white;
+    }
+
+    #barca-app {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        margin-left: -25%;
+        top: 80px;
+    }
+
+    .fourth-container {
+        background-color: #1f3020;
+        display: flex;
+        background-image: url('./images/yarn-table.jpg');
+
+
+    }
+
+    .project2 {
+        background: linear-gradient(300deg, #970053, #fe7de2, #fee046);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+        width: 50%;
+        height: 400px;
+        position: absolute;
+        border-bottom: 5px solid white;
+
+
+    }
+
+    #project2-dscrptn {
+        display: flex;
+        flex-direction: column;
+        background-color: #1f3020;
+        height: 500px;
+        width: 50%;
+        margin-left: 50%;
+        border-left: 5px solid white;
+
+    }
+
+    #project2-dscrptn h3 {
+        color: white;
+        font-size: 2.2rem;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+
+
+    #inder {
+        color: #ffe416;
+
+    }
+
+    #CAT {
+        color: #fe7de2;
+
+
+    }
+
+    #project2-dscrptn p {
+
+        background-color: #004bb5;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 25px;
+        margin-top: 40px;
+        margin-left: 100px;
+        border-radius: 20px;
+        width: 70%;
+        cursor: pointer;
+        font-size: 100%;
+        color: white;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #project2-dscrptn p:hover {
+        background-color: #4185fa;
+        transform: scale(1.05);
+    }
+
+    #CaTinder-app {
+        width: 460px;
+        height: 260px;
+        position: relative;
+        margin-left: 10%;
+        top: 100px;
+    }
+
+    .fifth-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        /*background-color: #1f3020;*/
+        background-image: url('./images/Beirut-Toronto.png');
+        height: 500px;
+        width: 100%;
+    }
+
+    .contact-container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 100px;
+
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+
+
+    .contact-left-title h2 {
+
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 5px;
+
+
+    }
+
+    .contact-left-title hr {
+
+
+        width: 120px;
+        height: 5px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px;
+
+
+
+
+    }
+
+    .contact-inputs {
+        border: none;
+        outline: none;
+        width: 400px;
+        height: 50px;
+        padding-left: 25px;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: #d2ebff;
+
+    }
+
+    .contact-left textarea {
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+
+    }
+
+    .contact-inputs :focus {
+        border: 2px solid #c6943e;
+    }
+
+    .contact-left button {
+        background-color: #004bb5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+
+    }
+
+    .contact-left button:hover {
+        background-color: #4185fa;
+        transform: scale(1.05);
+    }
+
+    .contact-left button:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 99, 248, 0.5);
+
+    }
+
+    .contact-right img {
+        width: 450px;
+        margin-left: 200px;
+    }
+
+    #email-img {
+        height: 50px;
+        width: 60px;
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+
+    }
+}
